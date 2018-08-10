@@ -1,6 +1,6 @@
 language: node_js
-
-install: true
+node_js:
+  - "10.7"
 before_install:
 - curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 - echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
@@ -8,6 +8,7 @@ before_install:
 - sudo apt install --no-install-recommends -y yarn
 - sudo yarn install
 
+#install: true
 cache:
   directories:
   - node_modules/
