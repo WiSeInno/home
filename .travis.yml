@@ -18,9 +18,8 @@ before_deploy:
 deploy:
   provider: pages
   skip-cleanup: true
-  # travis encrypt GITHUB_TOKEN=<your github repo token> --add
-  github-token: "$GITHUB_TOKEN"
   keep-history: true
+  secure: "L8AJg76lE+Jfe9P6WYJ4hWNWIsMKMcTcd3PxscnR52klZblDukAnhx7nggDZq1FlewrK7kA81WX5mP7BLKZ+d9Ruu84xTX9C38NMxzoujbmwnKDos8ryyi4SA3BdEs+lGxHtJKDqbVvVUDZtU2sbpj3XK1pMS+oaXGRGZ4jHe7MVYQ73uxSwHrR2Zvs2N87lCiwgUMuU/Zyg7P27MpN8BYAs215fcJFXOeF8rgNDlCKFrEbdaJa1VnYfVMI9e8oUkMTf2nLzRTzr565tWtHl3PuLSMeZgS+DrZ1bqqSdUVCmceCL4pyWVubStsJg2etCwL8P/gn2CnOKQi2FNLVUcJNNJkdhUL3Crw3MM1FttPx94hpklaaWFk3BpPXzgE9BHta23fRrbq58n3FbOjbMcsfHfbp83R4RsjRJACntWiRgiDP1Hp/AsUMLLjjcRkm2hJO9pNljmjf7pf+JVBUIioIWev4eNHZjjm5MA9Izyd9aR7ogn2FOkGuvbN+uUmI3WGJ/BeO06FHu3yUNefITnV9aUVwtA7tejOc0qwkpHkGWfpTb8VcdWLpeUqA73E7ebQCzzxwmAPUSEwe/x6wgggLM09u3dphWv8d8K5Ds0AKvFkXBg6bPofBEpyoCyeEgHyolQGm9ohxy3CJtASCh85X0yw5lV5PFaUqnfGV/eFA="
   on:
     branch: master
   local-dir: deploy
