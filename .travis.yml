@@ -1,0 +1,27 @@
+language: node_js
+
+install: true
+before_install:
+- curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+- echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+- sudo apt update -y || true
+- sudo apt install --no-install-recommends -y yarn
+- sudo yarn install
+
+cache:
+  directories:
+  - node_modules/
+  - $HOME/.npm
+
+before_deploy:
+- cd ${root}
+deploy:
+  provider: pages
+  skip-cleanup: true
+  # travis encrypt GITHUB_TOKEN=<your github repo token> --add
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  on:
+    branch: master
+  local-dir: deploy
+  target_branch: gh-pages

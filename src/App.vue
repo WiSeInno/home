@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navbar></navbar>
+    
     <el-container>
       <el-header height='400px'>
           <hero></hero>
