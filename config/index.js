@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: '/wiseinno.tech',
     proxyTable: {},
 
     // Various Dev Server settings
