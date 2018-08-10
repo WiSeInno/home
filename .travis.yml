@@ -22,5 +22,5 @@ deploy:
   github-token: "d2839505ad1d03eb116ec3eb0309d3342d8e30a8"
   on:
     branch: master
-  local-dir: deploy
+  local-dir: dist
   target_branch: gh-pages
