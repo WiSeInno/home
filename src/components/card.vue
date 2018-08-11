@@ -1,6 +1,6 @@
 <template>
 <div id="team">
-  <el-row :gutter="20">
+  <el-row :gutter="40">
         <el-col :span="8" v-for="(card, index) in content" :key="o">
           <el-card :body-style="{ padding: '0px' }">
             <img v-bind:src="card.pic" height="250" class="image">
