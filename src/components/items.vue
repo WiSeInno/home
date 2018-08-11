@@ -37,6 +37,9 @@ export default {
 
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css?family=Gaegu|Patua+One');
+.items{
+  margin-bottom: 40px;
+}
   .svg{
     width: 90%;
     margin-top: 100px;
