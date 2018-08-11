@@ -1,7 +1,7 @@
 <template>
   <div id="hero">
     <h1 class="title">WiSeInno</h1>
-    <h2 class="subtitle">A Team Devoted to Innovation</h2>
+    <h2 class="subtitle">Innovation is fun</h2>
     <div class="icon_bar">
       <a>
         <el-button type='primary' icon='el-icon-search' circle></el-button>
