@@ -4,7 +4,7 @@
       <el-col :span='12'>
         <h1 class="title">Events</h1>
         <p id="txt1"class="text info">
-          Events are what get us started. We organized a lot, all of them supported by <a href="http://ieee-cas.org/">IEEE CAS Society</a> and <a href="http://electronics.physics.auth.gr/">Sector of Electronics of the Physics Dept. AUTh</a>. It was a great experience, you <strong>should</strong> try it! 
+          WiseInno has been found back at 2016 in order to help the organisation of various workshops and schools organised by the <a href="http://electronics.physics.auth.gr/">Sector of Electronics of the Physics Dept. AUTh</a> and sponsored by <a href="http://ieee-cas.org/">IEEE CAS Society</a>. WiSe School 2016 brought us ( <i>Dimitris, Markella, Kosmas, Despina </i>) together and our passion motivated us to organise WiSeIoT, IoT-BB School 2017 and Biolelectronics! It was a great experience and you <strong>should </strong>, definitely, try it!
           <br>
           <a href='http://wiseinno-events.herokuapp.com'><el-button type="primary" plain class="btn">Past Events</el-button></a>
         </p>
@@ -39,6 +39,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Gaegu|Patua+One');
   .svg{
     width: 90%;
+    margin-top: 100px;
   }
   .title{
     font-size: 44px;
@@ -50,7 +51,9 @@ export default {
     font-size: 18px;
     text-align: center;
     font-family: 'Patua One', cursive;
-    color:  #C89EC4;}
+    color:  #C89EC4;
+    text-align: justify;
+    }
   
     p.text.info{
       color: #84B1ED;
