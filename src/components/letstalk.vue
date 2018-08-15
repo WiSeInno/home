@@ -5,8 +5,8 @@
         <h1 class="title">Let's Talk</h1>
         <p class="text">We love new ideas! So if you want to share your story, article or make any kind of suggestion we are more than open to have a conversation! You can get in touch with us either via WiSeInno or in person!</p>
         <el-row type="flex" justify="center" gutter="50">
-          <el-col :span='5' v-for="p in content">
-            <h2 class="name">WiSeInno</h2>
+          <el-col :span='5' v-for="p in content" :key="o">
+            <h2 class="name">{{p.name}}</h2>
             <img class='logo' v-bind:src='p.pic'>
             <ul>
               <li>
