@@ -1,43 +1,23 @@
 <template>
   <div class='talk'>
-    <el-row>
+    <el-row :gutter="150">
       <el-col :span='24'>
         <h1 class="title">Let's Talk</h1>
-        <p class="text">Our greatest dream was the creation of a blog and now it's the time to bring this dream into life! We want to be a step for everyone to share their story, their passion, and the way through their persuing their dreams. We believe everything is possible so If you think you got something to share in order to help  more people to thrive you are more than welcome. Just drop us some words</p>
-        <el-row type="flex" justify="center">
-          <el-col :span='8'>
+        <p class="text">We love new ideas! So if you want to share your story, article or make any kind of suggestion we are more than open to have a conversation! You can get in touch with us either via WiSeInno or in person!</p>
+        <el-row type="flex" justify="center" gutter="50">
+          <el-col :span='5' v-for="p in content">
             <h2 class="name">WiSeInno</h2>
-            <img class='logo' v-bind:src='require("@/assets/logo.png")'>
+            <img class='logo' v-bind:src='p.pic'>
             <ul>
               <li>
-                <i class="fab fa-twitter fa-2x twitter"></i>
+                <a v-bind:href="'https://twitter.com/'+p.twitter">
+                  <i class="fab fa-twitter fa-2x twitter"></i>
+                </a>  
               </li>
               <li>
-                <i class="fas fa-envelope fa-2x "></i>
-              </li>
-            </ul>
-          </el-col>
-          <el-col :span='8'>
-            <h2 class="name">Markella</h2>
-            <img class='logo' v-bind:src='require("@/assets/logo.png")'>
-            <ul>
-              <li>
-                <i class="fab fa-twitter fa-2x twitter"></i>
-              </li>
-              <li>
-                <i class="fas fa-envelope fa-2x"></i>
-              </li>
-            </ul>
-          </el-col>
-          <el-col :span='8'>
-            <h2 class="name">Dimitris</h2>
-            <img class='logo' v-bind:src='require("@/assets/logo.png")'>
-            <ul>
-              <li>
-                <i class="fab fa-twitter fa-2x twitter"></i>
-              </li>
-              <li>
-                <i class="fas fa-envelope fa-2x"></i>
+                <a v-bind:href=" 'mailto:'+p.mail">
+                  <i class="fas fa-envelope fa-2x "></i>
+                </a>
               </li>
             </ul>
           </el-col>
@@ -50,6 +30,15 @@
 <script>
 export default {
   name: 'letstalk',
+  data () {
+    return {
+      content: [
+        {name: 'WiSeInno', pic: require("@/assets/logo.png"), mail: 'info@wiseinno.tech', twitter: 'wise_inno'},
+        {name: 'Markella', pic: require("@/assets/avatar-female.jpg"), mail: 'markella@wiseinno.tech', twitter: 'frmarliakou'},
+        {name: 'Dimitris', pic: require("@/assets/av-male.jpg"), mail: 'dstrants@wiseinno.tech', twitter: 'dstrants'},
+      ]
+    }
+  },
 }
 </script>
 
@@ -82,18 +71,25 @@ export default {
     }
     ul{
       list-style-type: none;
-      li{
+      padding-left: 0;
+       li{
         float: left;
         margin-left: 10px;
+        a{
+          color: inherit;
+        }
       }
     }
     .logo{
-      width: 20%;
-      border-radius: 50%;
-      padding: 10px;
-      background-color: white;
+      width: 25%;
+      margin-left: 7%;
     }
     .twitter{
       color: #1da1f2;
+    }
+    .talk{
+      background-color: #f2f2f2;
+      padding: 0px 100px 50px 100px;
+      margin-bottom: 20px;
     }
 </style>

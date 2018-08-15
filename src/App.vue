@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    
     <el-container>
       <el-header height='400px'>
           <hero></hero>
@@ -18,13 +17,14 @@
           </el-col>
         </el-row>
         <el-row type="flex" justify="center">
-          <el-col :span='18'>
-            <letstalk></letstalk>
+          <el-col :span='18'> 
           </el-col>
         </el-row>
       </el-main>
-    </el-container>
-    <my_footer></my_footer>
+      <el-footer>
+        <letstalk></letstalk>
+      </el-footer>
+    </el-container> 
   </div>
 </template>
 
@@ -50,5 +50,6 @@ body{
   height: 100%;
   width: 100%;
   padding: 0;
+  overflow-x: hidden;
 }
 </style>

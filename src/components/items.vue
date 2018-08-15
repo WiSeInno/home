@@ -20,7 +20,7 @@
       <el-col :span='12'>
         <h1 class="title">Blogging</h1>
         <p id="txt2" class="text">
-          Our blog is a initiative we dreamed a lot time ago and now trying to make it real. We want to be a step for everyone to share their story, their passion, and the way through their persuing their dreams. We believe everything is possible so  If you think you got something to share in order to help us inspire more people to thrive you are more that welcome. Just drop us some words  😀.
+          Our greatest dream was the creation of a blog and now it's the time to bring this dream into life! We want to be a step for everyone to share their story, their passion, and the way through their persuing their dreams. We believe everything is possible so If you think you got something to share in order to help  more people to thrive you are more than welcome. Just drop us some words  😀.
           <br>
           <a href='https://blog.wiseinno.tech'><el-button type="warning" plain class="btn">Visit Blog</el-button></a>
         </p>
