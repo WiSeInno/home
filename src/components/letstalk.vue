@@ -3,7 +3,7 @@
     <el-row>
       <el-col :span='24'>
         <h1 class="title">Let's Talk</h1>
-        <p class="text">We are really open to conversation and we love great ideas. So if you have anything to suggest or even if you think we can be of any help do not hesitate to contact as through WiSeInno or in person.</p>
+        <p class="text">Our greatest dream was the creation of a blog and now it's the time to bring this dream into life! We want to be a step for everyone to share their story, their passion, and the way through their persuing their dreams. We believe everything is possible so If you think you got something to share in order to help  more people to thrive you are more than welcome. Just drop us some words</p>
         <el-row type="flex" justify="center">
           <el-col :span='8'>
             <h2 class="name">WiSeInno</h2>
