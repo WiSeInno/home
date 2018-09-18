@@ -1,26 +1,27 @@
 language: node_js
 node_js:
-  - "10.7"
-
+- '10.7'
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.9.2
-  - export PATH="$HOME/.yarn/bin:$PATH"
+- curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.9.2
+- export PATH="$HOME/.yarn/bin:$PATH"
 install:
-  - yarn install
+- yarn install
 script:
-  - npm run build
+- npm run build
 cache:
   yarn: true
   directories:
-    - node_modules
+  - node_modules
 before_deploy:
 - cd ${root}
 deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
-  github-token: "d2839505ad1d03eb116ec3eb0309d3342d8e30a8"
   on:
     branch: master
   local-dir: dist
   target_branch: gh-pages
+env:
+  global:
+    secure: R+AFj2sEy10OB4NN76mPNhIBvQghnGeViz8bub3u6yOChMdolshfCaLWNiPVWGVmwTsV4FaF0OqBfDhXEDchymXm0yoMA+phH/miLf2bwL3EGFXxwmayJz2r+Jo8PH5Yd+rgFqvmvZkHAuvvbgo55lsZNSvn2BLCI//cpjj+Z/bHz2eP8WXXb2mKXIdEuo9khSeofALYi9xZF3pvttZG0G4G0GAg6KvwmnW+EHBgbs/5QblqphPVh6a8RpRU1nXNl4F9Yhy3POpSIOI+NPKg5vdmKro42sD5bR4P634IzSPhAZ5ovq5O6joJtQxqLuHT00V/l9q2ugSGzzD66RApT9j+NTqfEnr65Rq5HFvg3WBseLaaZiWznn4B+NvufU76xGJOwemAAR+TQ64byfq0rDtWMPFzPivsR4A1tDd572QBibzpcn8Vb5b5zN+pCnXavNsXvIK09ZXMTrRj/DddjrkECSKPTn4n1JdzSt9wZPTMEWwWSDgHCcm7Y2WNaoPnHw+c+84h90BG0+eBYBaavRfQuijC4xSTh2pewqUMgwwvlCQlFsRGaqzZ+QzY+BlF3wnI4q8KfG4mAHpb97sRZ5VuErP7emcUVlxJ/+PHHEZwmM9ArVUnhD40FfgPsBn1c1xotmd2eakq9WmLIttYkHTlksuzC2WMfp6AB+o62MY=
