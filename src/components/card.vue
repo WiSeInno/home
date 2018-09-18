@@ -26,9 +26,9 @@ export default {
   data() {
     return {
       content: [
-        {name: 'Success Stories', pic: require('@/assets/success.svg'), link: 'http://wiseinno.tech'},
-        {name: 'Technical Articles', pic: require('@/assets/research.svg'), link: 'https://blog.wiseinno.tech'},
-        {name: 'Piece of Advice', pic: require('@/assets/help.svg'), link: 'https://wiseinnnoevents.herokuapp.com'}
+        {name: 'Success Stories', pic: require('@/assets/success.svg'), link: 'https://blog.wiseinno.tech/success-stories/home'},
+        {name: 'Technical Articles', pic: require('@/assets/research.svg'), link: 'https://blog.wiseinno.tech/technical/home'},
+        {name: 'Piece of Advice', pic: require('@/assets/help.svg'), link: 'https://blog.wiseinno.tech/advice/home'}
       ]
     };
   }
