@@ -57,7 +57,9 @@ export default {
     font-size: 18px;
     text-align: center;
     font-family: 'Patua One', cursive;
-    color:  #C89EC4;}
+    color:  #C89EC4;
+    width: 50%;
+    margin: auto;}
   
     p.text.info{
       color: #84B1ED;
