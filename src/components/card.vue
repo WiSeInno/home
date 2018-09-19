@@ -1,7 +1,7 @@
 <template>
 <div id="team">
   <el-row :gutter="40">
-        <el-col :span="8" v-for="(card, index) in content" :key="o">
+        <el-col :xs="24" :sm="24" :md="8" :lg="8" :xl="8" v-for="(card, index) in content" :key="o">
           <el-card :body-style="{ padding: '0px' }">
             <img v-bind:src="card.pic" height="250" class="image">
             <div style="padding: 14px;">
@@ -42,5 +42,11 @@ hr{
   border-radius: 10px;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.el-col{
+  margin-top: 20px;
+}
+.el-card img{
+  width: 90%;
 }
 </style>

@@ -7,6 +7,7 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import 'element-ui/lib/theme-chalk/display.css';
  
 Vue.config.productionTip = false
 Vue.use(ElementUI)

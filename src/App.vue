@@ -6,7 +6,7 @@
       </el-header>
       <el-main>
         <el-row type="flex" justify="center">
-          <el-col :span='14'>
+          <el-col :xs="20" :sm="18" :md="14" :lg="14" :xl="14">
             <items></items>
             <router-view/>
           </el-col>
@@ -16,12 +16,8 @@
             <card></card>
           </el-col>
         </el-row>
-        <el-row type="flex" justify="center">
-          <el-col :span='18'> 
-          </el-col>
-        </el-row>
       </el-main>
-      <el-footer>
+      <el-footer :xs="24" :sm="18" :md="14" :lg="14" :xl="14">
         <letstalk></letstalk>
       </el-footer>
     </el-container> 
@@ -31,7 +27,6 @@
 <script>
 import navbar from '@/components/Navbar';
 import card  from '@/components/card';
-import my_footer from '@/components/footer';
 import hero from'@/components/hero';
 import items from '@/components/items';
 import letstalk from '@/components/letstalk'
@@ -39,7 +34,7 @@ import letstalk from '@/components/letstalk'
 export default {
   name: 'App',
   components: {
-    navbar, card, my_footer, hero, items, card, letstalk
+    navbar, card, hero, items, card, letstalk
   }
 }
 </script>

@@ -1,22 +1,22 @@
 <template>
   <div class='talk'>
-    <el-row :gutter="150">
-      <el-col :span='24'>
+    <el-row :gutter="15">
+      <el-col type="flex" justify="center" :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
         <h1 class="title">Let's Talk</h1>
         <p class="text">We love new ideas! So if you want to share your story, article or make any kind of suggestion we are more than open to have a conversation! You can get in touch with us either via WiSeInno or in person!</p>
         <el-row type="flex" justify="center" gutter="50">
-          <el-col :span='5' v-for="p in content" :key="o">
+          <el-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8" v-for="p in content" :key="o">
             <h2 class="name">{{p.name}}</h2>
             <img class='logo' v-bind:src='p.pic'>
             <ul>
               <li>
                 <a v-bind:href="'https://twitter.com/'+p.twitter">
-                  <i class="fab fa-twitter fa-2x twitter"></i>
+                  <i class="fab fa-twitter twitter"></i>
                 </a>  
               </li>
               <li>
                 <a v-bind:href=" 'mailto:'+p.mail">
-                  <i class="fas fa-envelope fa-2x "></i>
+                  <i class="fas fa-envelope"></i>
                 </a>
               </li>
             </ul>
@@ -58,8 +58,8 @@ export default {
     text-align: center;
     font-family: 'Patua One', cursive;
     color:  #C89EC4;
-    width: 50%;
-    margin: auto;}
+    margin: auto;
+    }
   
     p.text.info{
       color: #84B1ED;
@@ -79,11 +79,14 @@ export default {
         margin-left: 10px;
         a{
           color: inherit;
+          font-size: 18px;
+          font-size-adjust: inherit;
         }
       }
     }
     .logo{
-      width: 25%;
+      width: 50%;
+      max-width: 85px;
       margin-left: 7%;
     }
     .twitter{
@@ -91,7 +94,7 @@ export default {
     }
     .talk{
       background-color: #f2f2f2;
-      padding: 0px 100px 50px 100px;
+      padding: 0px 5% 2% 5%;
       margin-bottom: 20px;
     }
 </style>
