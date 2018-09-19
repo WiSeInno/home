@@ -8,7 +8,6 @@
         <el-row type="flex" justify="center">
           <el-col :xs="20" :sm="18" :md="14" :lg="14" :xl="14">
             <items></items>
-            <router-view/>
           </el-col>
         </el-row>
         <el-row type="flex" class="row-bg" justify="center">
