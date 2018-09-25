@@ -3,7 +3,7 @@
     <el-row :gutter="15">
       <el-col type="flex" justify="center" :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
         <h1 class="title">Let's Talk</h1>
-        <p class="text">We love new ideas! So if you want to share your story, article or make any kind of suggestion we are more than open to have a conversation! You can get in touch with us either via WiSeInno or in person!</p>
+        <p class="text">We love new ideas! So if you want to share your story, article or to make any kind of suggestion we are more than happy to hear from you! You can get in touch with us either via WiSeInno social media accounts or by reaching us on our personal social accounts!</p>
         <el-row type="flex" justify="center" gutter="50">
           <el-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8" v-for="p in content" :key="o">
             <h2 class="name">{{p.name}}</h2>

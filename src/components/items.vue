@@ -4,7 +4,7 @@
       <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
         <h1 class="title">Events</h1>
         <p id="txt1"class="text info">
-          WiseInno has been found back at 2016 in order to help the organisation of various workshops and schools organised by the <a href="http://electronics.physics.auth.gr/">Sector of Electronics of the Physics Dept. AUTh</a> and sponsored by <a href="http://ieee-cas.org/">IEEE CAS Society</a>. WiSe School 2016 brought us ( <i>Dimitris, Markella, Kosmas, Despina </i>) together and our passion motivated us to organise WiSeIoT, IoT-BB School 2017 and Biolelectronics! It was a great experience and you <strong>should </strong>, definitely, try it!
+          WiseInno was founded in 2016 in order to help organize a variety of workshops and schools held by the Sector of <a href="http://electronics.physics.auth.gr/">Sector of Electronics of the Physics Dept. AUTh</a>  and sponsored by <a href="http://ieee-cas.org/">IEEE CAS Society</a>. WiSe School 2016 has brought us, WiSeInno team, together and our passion motivated us to organise WiSeIoT, IoT-BB School 2017 and Biolelectronics! It was a great experience and we recommend that you <strong>should </strong>, definitely, try it!
           <br>
           <a href='http://wiseinno-events.herokuapp.com'><el-button type="primary" plain class="btn">Past Events</el-button></a>
         </p>
@@ -20,7 +20,7 @@
       <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
         <h1 class="title">Blogging</h1>
         <p id="txt2" class="text">
-          Our greatest dream was the creation of a blog and now it's the time to bring this dream into life! We want to be a step for everyone to share their story, their passion, and the way through their persuing their dreams. We believe everything is possible so If you think you got something to share in order to help  more people to thrive you are more than welcome. Just drop us some words  😀.
+          Our greatest dream was the creation of a blog and now it's time to bring this dream into life! We would love this blog to be a place for each and everyone to share their stories, their passion and to be a step on persuing their dreams. We believe everything is possible, so... If you think you got something to share in order to help  other people thrive , just drop us some words!
           <br>
           <a href='https://blog.wiseinno.tech'><el-button type="warning" plain class="btn">Visit Blog</el-button></a>
         </p>
