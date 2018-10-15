@@ -1,11 +1,13 @@
 <template>
   <div class='talk'>
-    <el-row :gutter="15">
-      <el-col type="flex" justify="center" :xs="24" :sm="24" :md="24" :lg="24" :xl="18">
+    <el-row :gutter="15" type="flex" justify="center">
+      <el-col type="flex" justify="center" :xs="24" :sm="24" :md="20" :lg="18" :xl="18">
         <h1 class="title">Let's Talk</h1>
         <p class="text">We love new ideas! So if you want to share your story, article or to make any kind of suggestion we are more than happy to hear from you! You can get in touch with us either via WiSeInno social media accounts or by reaching us on our personal social accounts!</p>
-        <el-row type="flex" justify="center" gutter="50">
-          <el-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8" v-for="p in content" :key="o">
+      </el-col>
+    </el-row>
+    <el-row type="flex" justify="center" gutter="50">
+          <el-col  :xs="8" :sm="8" :md="8" :lg="8" :xl="8" v-for="p in content" :key="o">
             <h2 class="name">{{p.name}}</h2>
             <img class='logo' v-bind:src='p.pic'>
               <ul>
@@ -22,16 +24,14 @@
             </ul>
           </el-col>
         </el-row>
-        <el-row type="flex" justify="center" gutter="50">
-          <el-col justify="center" :xs="24" :sm="24" :md="24" :lg="8" :xl="8">
+    <el-row type="flex" justify="center" gutter="50">
+          <el-col :xs="16" :sm="12" :md="9" :lg="8" :xl="8">
             <p :class="credit">
               Site is made with <i class="fas fa-heart" style="color: #EE7785;"></i> and <i class="fab fa-vuejs" style="color: #4dba87"></i> by WiSeInno 2018 <i class="fas fa-lightbulb" style="color: #008ed6;"></i>
             </p>
             <p>Huge thanks to <a style="color:#508df5;" href="https://twitter.com/unDraw_co">unDraw</a> by <a style='color: #C89EC4' href="https://twitter.com/NinaLimpi">@NinaLimpi</a> for the awesome illustrations</p>
           </el-col>
         </el-row>
-      </el-col>
-    </el-row>
   </div>
 </template>
 
