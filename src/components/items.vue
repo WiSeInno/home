@@ -4,7 +4,7 @@
       <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
         <h1 class="title">Events</h1>
         <p id="txt1"class="text info">
-          WiseInno was founded in 2016 in order to help organize a variety of workshops and schools held by the Sector of <a href="http://electronics.physics.auth.gr/">Sector of Electronics of the Physics Dept. AUTh</a>  and sponsored by <a href="http://ieee-cas.org/">IEEE CAS Society</a>. WiSe School 2016 has brought us, WiSeInno team, together and our passion motivated us to organise WiSeIoT, IoT-BB School 2017 and Biolelectronics! It was a great experience and we recommend that you <strong>should </strong>, definitely, try it!
+          WiseInno was founded in 2016 in order to help organize a variety of workshops and schools held by the <a href="http://electronics.physics.auth.gr/">Sector of Electronics of the Physics Dept. AUTh</a>  and sponsored by <a href="http://ieee-cas.org/">IEEE CAS Society</a>. WiSe School 2016 has brought us, WiSeInno team, together and our passion motivated us to organise WiSeIoT, IoT-BB School 2017 and Biolelectronics! It was a great experience and we recommend that you <strong>should </strong>, definitely, try it!
           <br>
           <a href='http://wiseinno-events.herokuapp.com'><el-button type="primary" plain class="btn">Past Events</el-button></a>
         </p>
