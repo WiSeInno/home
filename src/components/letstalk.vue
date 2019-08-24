@@ -41,9 +41,9 @@ export default {
   data () {
     return {
       content: [
-        {name: 'WiSeInno', pic: require("@/assets/logo.png"), mail: 'info@wiseinno.tech', twitter: 'wise_inno'},
-        {name: 'Markella', pic: require("@/assets/avatar-female.jpg"), mail: 'markella@wiseinno.tech', twitter: 'frmarliakou'},
-        {name: 'Dimitris', pic: require("@/assets/av-male.jpg"), mail: 'dstrants@wiseinno.tech', twitter: 'dstrants'},
+        {name: 'WiSeInno', pic: require("@/assets/logo.png"), mail: 'wiseinno@strdi.me', twitter: 'wise_inno'},
+        {name: 'Markella', pic: require("@/assets/avatar-female.jpg"), mail: 'frmarliakou@gmail.com', twitter: 'frmarliakou'},
+        {name: 'Dimitris', pic: require("@/assets/av-male.jpg"), mail: 'dstrants@gmail.com', twitter: 'dstrants'},
       ]
     }
   },
